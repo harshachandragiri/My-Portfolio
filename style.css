@@ -17,7 +17,7 @@ html{
 }
 
 body{
-    background: black;
+    background-color: black;
     color: white;
     font-family: "Montserrat", sans-serif;
 }
@@ -386,6 +386,8 @@ img {
     padding: 80px 14px;
     border: 2px solid white;
     column-gap: 15px;
+    display: grid; 
+    grid-template-columns: auto auto; 
 }
 .projects h2{
     font-size: 4rem;
@@ -396,10 +398,7 @@ img {
 
 /* Mobile devices (max-width: 768px) */
 @media (max-width: 768px) {
-    .projects-container {
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(4, 250px);
-    }
+    
     
     .project-box {
       margin-bottom: 20px;
@@ -416,10 +415,10 @@ img {
     }
   }
 /* Smartphone devices (max-width: 480px) */
-@media (max-width: 480px) {
+@media (max-width: 450px) {
     .projects-container {
-        grid-template-columns: 1fr;
-      grid-template-rows: repeat(4, 200px);
+        display: grid;
+        grid-template-columns: auto;
     }
     
     .project-box {
@@ -431,7 +430,7 @@ img {
     }
     
     .imgp {
-      height: 100px;
+      height: 150px;
     }
   }
     

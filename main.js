@@ -42,4 +42,16 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 }
 
+function Dark(){
+    // alert("Working");
+    let dataval=document.getElementById('bil');
+    // dataval.innerHtml="";
+    // dataval.innerHtml="Dark";
+    // dataval.style.color = 'black';
+    dataval.style.backgroundColor = 'red';
+    alert("Fine")
+
+}
+
+
 
