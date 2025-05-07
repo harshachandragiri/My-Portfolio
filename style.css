@@ -108,6 +108,7 @@ html::-webkit-scrollbar-thumb{
     .navbar .active{
         display: block;
     }
+    
 
     .navbar a{
         display: block;
@@ -122,6 +123,22 @@ html::-webkit-scrollbar-thumb{
         border-bottom: 0.5rem solid black;
     }
 }
+#close-menu {
+    font-size: 2rem;
+    color: white;
+    text-align: right;
+    display: block;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  #menu-icons {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    z-index: 1001; /* above the navbar */
+  }
+  
+  
 
 section{
     min-height: 100vh;

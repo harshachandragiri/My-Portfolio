@@ -1,23 +1,24 @@
 var typed = new Typed(".typewriter-text ", {
-  strings: [
-    " ",
-    "Web Developer",
+    strings: [
+        " ",
+        "MEAN-STACK Developer",
 
-    "Front-End Developer",
+        "MERN-STACK Developer",
 
-    "UI-UX Designer",
+        "PYTHON & JAVA DEVELOPER",
 
-    " JAVA Developer"
-  ],
-  typeSpeed: 100,
-  backSpeed: 60,
-  loop: true,
+        "GEN-AI DEVELOPER"
+    ],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true,
 });
 
 let menuIcon = document.querySelector('#menu-icons');
 let navbar = document.querySelector('.navbar');
 
-let section = document.querySelectorAll('.section');
+// let section = document.querySelectorAll('.section');
+let sections = document.querySelectorAll('.section');
 let navLinks = document.querySelectorAll('.header nav a');
 
 window.onscroll = () => {
@@ -27,24 +28,33 @@ window.onscroll = () => {
         let height = window.offsetHeight;
         let id = sec.getAttribute('id');
 
-        if (top >= offset && top < offset + height){
+        if (top >= offset && top < offset + height) {
             navLinks.forEach(links => {
                 links.classList.remove('active');
                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-                
+
             })
         }
     })
 }
 
 menuIcon.onclick = () => {
-    menuIcon.classList.toggle('bx-x');
+    menuIcon.classList.toggle('fa-bars');
+    menuIcon.classList.toggle('fa-xmark');
     navbar.classList.toggle('active');
-}
+};
 
-function Dark(){
+let closeMenu = document.querySelector('#close-menu');
+
+closeMenu.onclick = () => {
+    navbar.classList.remove('active');
+    menuIcon.classList.add('fa-bars');
+    menuIcon.classList.remove('fa-xmark');
+};
+
+function Dark() {
     // alert("Working");
-    let dataval=document.getElementById('bil');
+    let dataval = document.getElementById('bil');
     // dataval.innerHtml="";
     // dataval.innerHtml="Dark";
     // dataval.style.color = 'black';
@@ -53,11 +63,11 @@ function Dark(){
 
 }
 
-  
-  
-  
-  
-  
+
+
+
+
+
 
 
 
